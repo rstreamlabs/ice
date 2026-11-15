@@ -1,20 +1,38 @@
-<!-- SPDX-FileCopyrightText: 2026 The Pion community <https://pion.ly> -->
-<!-- SPDX-License-Identifier: MIT -->
+This compatibility fork retains a concurrency correction for ICE server URL updates during candidate gathering. Current first-party builds use the official module with their verified build-time patch; the [fork notes](RSTREAM_FORK.md) explain that distinction. The upstream project README follows.
 
-# rstream fork of Pion ICE
+---
 
-This repository maintains the compatibility fork retaining serialized ICE URL snapshots during candidate gathering. It derives from [Pion ICE](https://github.com/pion/ice) and retains the upstream Go module identity and MIT license.
+<h1 align="center">
+  <br>
+  Pion ICE
+  <br>
+</h1>
+<h4 align="center">A Go implementation of ICE</h4>
+<p align="center">
+  <a href="https://pion.ly"><img src="https://img.shields.io/badge/pion-ice-gray.svg?longCache=true&colorB=brightgreen" alt="Pion ICE"></a>
+  <a href="https://discord.gg/PngbdqpFbt"><img src="https://img.shields.io/badge/join-us%20on%20discord-gray.svg?longCache=true&logo=discord&colorB=brightblue" alt="join us on Discord"></a> <a href="https://bsky.app/profile/pion.ly"><img src="https://img.shields.io/badge/follow-us%20on%20bluesky-gray.svg?longCache=true&logo=bluesky&colorB=brightblue" alt="Follow us on Bluesky"></a>
+  <br>
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/pion/ice/test.yaml">
+  <a href="https://pkg.go.dev/github.com/pion/ice/v4"><img src="https://pkg.go.dev/badge/github.com/pion/ice/v4.svg" alt="Go Reference"></a>
+  <a href="https://codecov.io/gh/pion/ice"><img src="https://codecov.io/gh/pion/ice/branch/master/graph/badge.svg" alt="Coverage Status"></a>
+  <a href="https://goreportcard.com/report/github.com/pion/ice"><img src="https://goreportcard.com/badge/github.com/pion/ice" alt="Go Report Card"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+</p>
+<br>
 
-This is a compatibility source for consumers still pinned to the fork. Current first-party builds use the official ICE module with their verified build-time patch; follow the owning consumer’s module file and build instructions.
+### Roadmap
+The library is used as a part of our WebRTC implementation. Please refer to that [roadmap](https://github.com/pion/webrtc/issues/9) to track our major milestones.
 
-Use the [fork guide](RSTREAM_FORK.md) to understand the retained changes and compatibility constraints before selecting a revision. Applications pin reviewed immutable replacements in their own module graph; a pseudo-version’s ancestor tag alone does not describe the reviewed source.
+### Community
+Pion has an active community on the [Discord](https://discord.gg/PngbdqpFbt).
 
-| Task                                | Start here                                                                                                                               |
-| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Integrate rstream in an application | [Go reference SDK](https://github.com/rstreamlabs/rstream-go) or [application examples](https://github.com/rstreamlabs/rstream-examples) |
-| Understand this fork                | [Retained behavior and maintenance](RSTREAM_FORK.md)                                                                                     |
-| Learn the upstream API              | [Pion ice](https://github.com/pion/ice)                                                                                                  |
-| Review source examples              | [Examples](examples)                                                                                                                     |
-| Contribute to upstream Pion         | [Contribution guide](https://github.com/pion/webrtc/wiki/Contributing)                                                                   |
+Follow the [Pion Bluesky](https://bsky.app/profile/pion.ly) or [Pion Twitter](https://twitter.com/_pion) for project updates and important WebRTC news.
 
-For rstream-specific changes, use this repository’s issues and preserve the fork regressions. Report vulnerabilities privately through the [rstream security policy](https://github.com/rstreamlabs/.github/blob/main/SECURITY.md). Upstream attribution and license terms are in [LICENSE](LICENSE).
+We are always looking to support **your projects**. Please reach out if you have something to build!
+If you need commercial support or don't want to use public methods you can contact us at [team@pion.ly](mailto:team@pion.ly)
+
+### Contributing
+Check out the [contributing wiki](https://github.com/pion/webrtc/wiki/Contributing) to join the group of amazing people making this project possible
+
+### License
+MIT License - see [LICENSE](LICENSE) for full text
