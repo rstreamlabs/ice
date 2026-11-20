@@ -1,3 +1,7 @@
+This compatibility fork retains the fix that snapshots ICE server URLs during candidate gathering. Current rstream builds use the official ICE module with a build-time correction.
+
+---
+
 <h1 align="center">
   <br>
   Pion ICE
