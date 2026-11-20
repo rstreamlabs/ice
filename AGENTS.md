@@ -11,4 +11,6 @@ Update user documentation and examples when behavior changes. Run the relevant c
 
 ## Fork-specific guidance
 
-Keep the upstream README, attribution and contribution policy intact. Limit rstream additions to the reason for retaining the fork and the constraints in `RSTREAM_FORK.md`. Preserve its owning regression tests when updating upstream source.
+Keep the upstream README, attribution and contribution policy intact. Keep the README preamble limited to the reason for retaining the fork.
+
+Preserve the upstream module path. Keep initial and continual gathering covered when updating the URL snapshot in `gather.go`. Run `go test -race ./...` and `go vet ./...` and check the supported consumers before repinning.

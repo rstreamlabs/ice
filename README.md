@@ -1,4 +1,4 @@
-This compatibility fork retains a concurrency correction for ICE server URL updates during candidate gathering. Current first-party builds use the official module with their verified build-time patch; the [fork notes](RSTREAM_FORK.md) explain that distinction. The upstream project README follows.
+This compatibility fork retains the fix that snapshots ICE server URLs during candidate gathering. Current rstream builds use the official ICE module with a build-time correction.
 
 ---
 
